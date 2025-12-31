@@ -6,6 +6,7 @@
 5.kubectl get resourceType --namespace=dev/stag/prod/yourNamespace ##if optional namespace flag is not set it would return default namespace or use --all-namespaces fag instead to list the resources in all namespaces
 6.kubectl scale --replicas=5 -f resource-definition.yml
 7. kubectl run redis --image=redis -n namespace
+8. kubectl explain pod --recursive ###this will explain the components of each resource that are required in tge defenition files
 
 
 
@@ -17,6 +18,8 @@
 
 
 
+
+*******IMPERATIVE COMMANDS:
 
 --dry-run: By default, as soon as the command is run, the resource will be created. If you simply want to test your command, use the --dry-run=client option. This will not create the resource. Instead, tell you whether the resource can be created and if your command is right.
 
